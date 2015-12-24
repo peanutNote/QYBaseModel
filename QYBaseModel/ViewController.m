@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "QYModel.h"
 
 @interface ViewController ()
 
@@ -17,11 +18,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    // 模拟网络加载数据
+    [self loadData];
+   
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)loadData
+{
+    // 加载本地json文件
+    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"actor" ofType:@".json"];
+    NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
+    NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:NULL];
+    
+    // 解析数据模型
+    QYModel *qyModel = [[QYModel alloc] initContentWithDic:jsonDict];
+    NSLog(@"%@",qyModel);
 }
+
 
 @end

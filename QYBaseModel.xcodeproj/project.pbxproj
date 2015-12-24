@@ -13,6 +13,11 @@
 		1EFDE6A21C2B9DFB00AA8C90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFDE6A01C2B9DFB00AA8C90 /* Main.storyboard */; };
 		1EFDE6A41C2B9DFB00AA8C90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EFDE6A31C2B9DFB00AA8C90 /* Assets.xcassets */; };
 		1EFDE6A71C2B9DFB00AA8C90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFDE6A51C2B9DFB00AA8C90 /* LaunchScreen.storyboard */; };
+		1EFDE6B01C2B9FCB00AA8C90 /* QYBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFDE6AF1C2B9FCB00AA8C90 /* QYBaseModel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1EFDE6B41C2BA1BA00AA8C90 /* QYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFDE6B31C2BA1BA00AA8C90 /* QYModel.m */; };
+		1EFDE6B61C2BD90900AA8C90 /* actor.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EFDE6B51C2BD90900AA8C90 /* actor.json */; };
+		1EFDE6B91C2BDCD000AA8C90 /* WorkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFDE6B81C2BDCD000AA8C90 /* WorkModel.m */; };
+		1EFDE6BC1C2BDCF600AA8C90 /* AvatarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFDE6BB1C2BDCF600AA8C90 /* AvatarModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,15 @@
 		1EFDE6A31C2B9DFB00AA8C90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EFDE6A61C2B9DFB00AA8C90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EFDE6A81C2B9DFB00AA8C90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EFDE6AE1C2B9FCB00AA8C90 /* QYBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYBaseModel.h; sourceTree = "<group>"; };
+		1EFDE6AF1C2B9FCB00AA8C90 /* QYBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYBaseModel.m; sourceTree = "<group>"; };
+		1EFDE6B21C2BA1BA00AA8C90 /* QYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYModel.h; sourceTree = "<group>"; };
+		1EFDE6B31C2BA1BA00AA8C90 /* QYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYModel.m; sourceTree = "<group>"; };
+		1EFDE6B51C2BD90900AA8C90 /* actor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = actor.json; sourceTree = "<group>"; };
+		1EFDE6B71C2BDCD000AA8C90 /* WorkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkModel.h; sourceTree = "<group>"; };
+		1EFDE6B81C2BDCD000AA8C90 /* WorkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkModel.m; sourceTree = "<group>"; };
+		1EFDE6BA1C2BDCF600AA8C90 /* AvatarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarModel.h; sourceTree = "<group>"; };
+		1EFDE6BB1C2BDCF600AA8C90 /* AvatarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +72,22 @@
 		1EFDE6961C2B9DFB00AA8C90 /* QYBaseModel */ = {
 			isa = PBXGroup;
 			children = (
+				1EFDE6B11C2B9FCE00AA8C90 /* QYBaseModel */,
 				1EFDE69A1C2B9DFB00AA8C90 /* AppDelegate.h */,
 				1EFDE69B1C2B9DFB00AA8C90 /* AppDelegate.m */,
 				1EFDE69D1C2B9DFB00AA8C90 /* ViewController.h */,
 				1EFDE69E1C2B9DFB00AA8C90 /* ViewController.m */,
+				1EFDE6B21C2BA1BA00AA8C90 /* QYModel.h */,
+				1EFDE6B31C2BA1BA00AA8C90 /* QYModel.m */,
+				1EFDE6B71C2BDCD000AA8C90 /* WorkModel.h */,
+				1EFDE6B81C2BDCD000AA8C90 /* WorkModel.m */,
+				1EFDE6BA1C2BDCF600AA8C90 /* AvatarModel.h */,
+				1EFDE6BB1C2BDCF600AA8C90 /* AvatarModel.m */,
 				1EFDE6A01C2B9DFB00AA8C90 /* Main.storyboard */,
 				1EFDE6A31C2B9DFB00AA8C90 /* Assets.xcassets */,
 				1EFDE6A51C2B9DFB00AA8C90 /* LaunchScreen.storyboard */,
 				1EFDE6A81C2B9DFB00AA8C90 /* Info.plist */,
+				1EFDE6B51C2BD90900AA8C90 /* actor.json */,
 				1EFDE6971C2B9DFB00AA8C90 /* Supporting Files */,
 			);
 			path = QYBaseModel;
@@ -77,6 +99,15 @@
 				1EFDE6981C2B9DFB00AA8C90 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1EFDE6B11C2B9FCE00AA8C90 /* QYBaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				1EFDE6AE1C2B9FCB00AA8C90 /* QYBaseModel.h */,
+				1EFDE6AF1C2B9FCB00AA8C90 /* QYBaseModel.m */,
+			);
+			path = QYBaseModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +170,7 @@
 				1EFDE6A71C2B9DFB00AA8C90 /* LaunchScreen.storyboard in Resources */,
 				1EFDE6A41C2B9DFB00AA8C90 /* Assets.xcassets in Resources */,
 				1EFDE6A21C2B9DFB00AA8C90 /* Main.storyboard in Resources */,
+				1EFDE6B61C2BD90900AA8C90 /* actor.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +183,11 @@
 			files = (
 				1EFDE69F1C2B9DFB00AA8C90 /* ViewController.m in Sources */,
 				1EFDE69C1C2B9DFB00AA8C90 /* AppDelegate.m in Sources */,
+				1EFDE6BC1C2BDCF600AA8C90 /* AvatarModel.m in Sources */,
+				1EFDE6B01C2B9FCB00AA8C90 /* QYBaseModel.m in Sources */,
 				1EFDE6991C2B9DFB00AA8C90 /* main.m in Sources */,
+				1EFDE6B91C2BDCD000AA8C90 /* WorkModel.m in Sources */,
+				1EFDE6B41C2BA1BA00AA8C90 /* QYModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
