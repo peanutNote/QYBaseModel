@@ -1,8 +1,8 @@
 //
-//  BaseModel.m
+//  QYBaseModel.m
 //  
 //
-//  Created by wxhl on 14-10-14.
+//  Created by qianye on 14-10-14.
 //  Copyright (c) 2014年 千叶 All rights reserved.
 //
 
@@ -38,8 +38,23 @@
             if ([jsonValue isKindOfClass:[NSNull class]] || jsonValue == nil) {
                 jsonValue = @"";
             }
-            // 调用set方法为model属性赋值
-            [self performSelector:action withObject:jsonValue];
+            //获得类和方法的签名
+            NSMethodSignature *signature = [self methodSignatureForSelector:action];
+            
+            //从签名获得调用对象
+            NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
+            
+            //设置target
+            [invocation setTarget:self];
+            
+            //设置selector
+            [invocation setSelector:action];
+            
+            // 设置参数 index从2开始 ，原因为：0 1 两个参数已经被target 和selector占用
+            [invocation setArgument:&jsonValue atIndex:2];
+            
+            //调用 
+            [invocation invoke];
         }
     }
 }

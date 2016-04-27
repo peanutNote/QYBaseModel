@@ -1,8 +1,8 @@
 //
-//  BaseModel.h
+//  QYBaseModel.h
 //  
 //
-//  Created by wxhl on 14-10-14.
+//  Created by qianye on 14-10-14.
 //  Copyright (c) 2014年 千叶 All rights reserved.
 //
 //  注意：NSString 类型无法用NSNumber接受
